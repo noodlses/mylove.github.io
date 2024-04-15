@@ -1,0 +1,151 @@
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url(https://cdn.discordapp.com/attachments/965398892625670155/1229441464052879451/image.png?ex=662fb196&is=661d3c96&hm=bb7daaf060de48db2e4041adc3411460a0566faf5b30b727d575aeb99a5b9edc&);
+    background-repeat:no-repeat;
+    background-position-x: 55%;
+    background-position-y: -60%;
+    background-size: 60%;
+}
+
+.heart {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    transform: rotate(45deg) scale(1);
+    border-radius: 0 0 12px 0;
+    -webkit-animation: pumpHeart 1500ms ease-in-out infinite;
+    animation: pumpHeart 1500ms ease-in-out infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: deeppink;
+}
+
+.heart::before {
+    transform: translateY(-50%);
+}
+
+.heart::after {
+    transform: translateX(-50%);
+}
+
+@-webkit-keyframes pumpHeart {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(45deg) scale(1);
+    }
+
+    60% {
+        transform: rotate(45deg) scale(1.2);
+    }
+
+    80% {
+        transform: rotate(45deg) scale(0.95);
+    }
+
+    90% {
+        transform: rotate(45deg) scale(1);
+    }
+
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+}
+
+@keyframes pumpHeart {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(45deg) scale(1);
+    }
+
+    60% {
+        transform: rotate(45deg) scale(1.2);
+    }
+
+    80% {
+        transform: rotate(45deg) scale(0.95);
+    }
+
+    90% {
+        transform: rotate(45deg) scale(1);
+    }
+
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+}
+.popup {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    font-size: 80px;
+    font-family: "Jersey 10 Charted";
+    width: 860px;
+    height:520px;
+    background-color: #ff62d5;
+    opacity: 0.9;
+    color: #70c1d7;
+    text-align: center;
+    border-radius: 6px;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    bottom: 125%;
+  }
+  
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 0.9;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:0.9 ;}
+  }
+
+  button {
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    padding:30px;
+}
+.button {
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    padding:30px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Here's a little something for the girl I love so dearly</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="stylesheet.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
+  </style>
+</head>
+<body>
+    <div class="heart">
+    </div> 
+    <div class="popup">
+        <p class="button" onclick="myFunction();playMusic()">
+            <span class="popuptext popup" id="myPopup">I LOVE YOU SOSOSOSO MUCH</br>:></span>
+        </p>
+      </div>
+<script>
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        function playMusic(){
+        var music = new Audio('ako.mp3');
+        music.play();
+  }
+</script>
+</body>
+</html>
